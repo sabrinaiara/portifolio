@@ -43,4 +43,122 @@
 
         .intro, .skills, .portfolio, .contact {
             margin-bottom: 50px;
-     
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo ao Meu Portfólio</h1>
+    <p>Sou um desenvolvedor apaixonado por tecnologia e inovação</p>
+</header>
+
+<nav>
+    <a href="#intro">Introdução</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="intro" class="intro">
+    <h2>Quem sou eu?</h2>
+    <p>Olá! Eu sou [Seu Nome], um desenvolvedor web apaixonado por criar experiências incríveis na web. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios. Confira alguns dos meus projetos abaixo.</p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML, CSS e JavaScript</li>
+        <li>Frameworks: React, Angular, Vue.js</li>
+        <li>Node.js e Express</li>
+        <li>Banco de dados: MySQL, MongoDB</li>
+        <li>Versionamento com Git</li>
+    </ul>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Meus Projetos</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1. Um aplicativo web que resolve X problema.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2. Um site de portfólio interativo.</p>
+        </div>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x250" alt="Projeto 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3. Um sistema de gerenciamento de tarefas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contato</h2>
+    <p>Se você deseja trabalhar comigo ou tem alguma dúvida, sinta-se à vontade para entrar em contato!</p>
+    <form class="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Meu Portfólio | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
